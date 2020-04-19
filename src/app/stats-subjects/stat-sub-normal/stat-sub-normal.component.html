@@ -1,1 +1,30 @@
-<p>stat-sub-normal works!</p>
+
+<H1>Normal distribution</H1>
+
+<h2 #solution></h2>    
+ 
+
+    <div class="form-group">
+      <label for="">n "number of sample"</label>
+      <input [(ngModel)]="nValue" type="number" class="form-control" >
+      
+    </div>
+
+    <div class="form-group">
+        <label for="">x̅ "median"</label>
+        <input [(ngModel)]="xValue" type="number" class="form-control" >
+        
+      </div>
+      <div class="form-group">
+        <label for="">u "mean"</label>
+        <input [(ngModel)]="uValue" type="number" class="form-control" >
+        
+      </div>
+      <div class="form-group">
+        <label for="">σ "standard deviation"</label>
+        <input [(ngModel)]="aValue" type="number" class="form-control" >
+        
+      </div>
+    
+    <button type="button" (click)="calculate()" class="btn btn-primary">Calculate</button>
+

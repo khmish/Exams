@@ -12,4 +12,8 @@ export class StatSubNormalComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  calculate()
+  {
+    
+  }
 }
