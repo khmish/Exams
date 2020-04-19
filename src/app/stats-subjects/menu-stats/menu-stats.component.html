@@ -1,0 +1,5 @@
+<div class="btn-group-vertical col">
+  
+    <button *ngFor="let item of menuItems" type="button" class="btn text-dark btn-outline-secondary btn-lg btn-block " (click)="routeTo(item.route)" style="border-radius:0">{{item.name}}</button>
+   
+  </div>

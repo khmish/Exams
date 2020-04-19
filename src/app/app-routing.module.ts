@@ -6,17 +6,18 @@ import {
   RouterModule
 } from '@angular/router';
 import { MathSubjectsComponent } from './math-subjects/math-subjects.component';
+import { StatsSubjectsComponent } from './stats-subjects/stats-subjects.component';
 
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'maths',
     component:MathSubjectsComponent
   },
   {
-    path: 'maths',
-    loadChildren: () => import('./math-subjects/math-subjects.module').then(m => m.MathSubjectsModule)
-  },
+    path: 'stats',
+    component:StatsSubjectsComponent
+  }
   // {
   //   path: '**',component
   // },

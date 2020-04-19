@@ -6,23 +6,26 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { MathSubjectsComponent } from './math-subjects/math-subjects.component';
-import { MathSubjectsRoutingModule } from './math-subjects/math-subjects-routing.module';
 import { MathSubjectsModule } from './math-subjects/math-subjects.module';
+import { StatsSubjectsComponent } from './stats-subjects/stats-subjects.component';
+import { MenuStatsComponent } from './stats-subjects/menu-stats/menu-stats.component';
+import { StatsSubjectsModule } from './stats-subjects/stats-subjects.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-
-    MathSubjectsComponent
+    MathSubjectsComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MathSubjectsRoutingModule,
-    MathSubjectsModule
+    MathSubjectsModule,
+    StatsSubjectsModule
   ],
+  exports: [],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,]
 })
 export class AppModule { }
