@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div class="form-group ">
+        <label class="control-label " for="select">
+         Choose p / p,q / p,q,r
+        </label>
+        <select [(ngModel)]="letters" class="select form-control" id="select" name="select" (change)='generateTruth()' >
+         <option *ngFor="let item of selectArray" value="{{item.number}}">
+          {{item.name}}
+         </option>
+         
+        </select>
+       </div>
+</div>

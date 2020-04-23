@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MathSubjectsComponent } from './math-subjects.component';
 
+import { TruthTableComponent } from './truth-table/truth-table.component';
+
 
 const routes: Routes = [
   {
@@ -9,13 +11,13 @@ const routes: Routes = [
         component: MathSubjectsComponent,
         children: [
             // {
-            //     path: 'normal',
-            //     component: StatSubNormalComponent
+            //     path: 'sub1',
+            //     component: Sub1Component
             // },
-            // {
-            //     path: 'fundamental',
-            //     component: StatSubFundamentalComponent
-            // }
+            {
+                path: 'truthTable',
+                component: TruthTableComponent
+            },
         ]
   }
 ];

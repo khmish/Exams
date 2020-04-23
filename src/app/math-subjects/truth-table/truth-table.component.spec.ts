@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Sub1Component } from './sub1.component';
+import { TruthTableComponent } from './truth-table.component';
 
-describe('Sub1Component', () => {
-  let component: Sub1Component;
-  let fixture: ComponentFixture<Sub1Component>;
+describe('TruthTableComponent', () => {
+  let component: TruthTableComponent;
+  let fixture: ComponentFixture<TruthTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Sub1Component ]
+      declarations: [ TruthTableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Sub1Component);
+    fixture = TestBed.createComponent(TruthTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
