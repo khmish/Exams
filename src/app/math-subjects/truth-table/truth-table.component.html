@@ -1,14 +1,23 @@
 
 <div class="container">
-    <div class="form-group ">
-        <label class="control-label " for="select">
-         Choose p / p,q / p,q,r
-        </label>
-        <select [(ngModel)]="letters" class="select form-control" id="select" name="select" (change)='generateTruth()' >
-         <option *ngFor="let item of selectArray" value="{{item.number}}">
-          {{item.name}}
-         </option>
-         
-        </select>
-       </div>
+    <div class="form-group">
+       <h3>and = '∧', or = '∨', if then = '→', if only if = '←→'
+        not(a) = " a' "</h3>
+      <label for=""></label>
+      <input type="text"
+        class="form-control" [(ngModel)]="expression" name="" id="" aria-describedby="helpId" placeholder="" value="{{expression}}">
+      
+    </div>
+    <button type="button" name="" id="" class="btn btn-primary"  (click)="onCalc()">calculate</button>
+
+    
+    <table class="table table-dark">
+        
+                <td *ngFor="let item of result2dTruth">
+                    <tr scope="row"><h4>{{item.letter}}</h4></tr>
+                    <tr *ngFor="let it of item.array"><h4>{{it}}</h4></tr>
+                    
+                </td>
+                
+    </table>
 </div>
