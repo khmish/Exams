@@ -26,7 +26,14 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/truth-table.js",
+              "src/assets/js/ast.js",
+              "src/assets/js/core.js",
+              "src/assets/js/parser.js",
+              "src/assets/js/renderer.js",
+              "src/assets/js/scanner.js"
+            ]
           },
           "configurations": {
             "production": {

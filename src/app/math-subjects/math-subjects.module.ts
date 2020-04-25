@@ -5,12 +5,18 @@ import { MathSubjectsRoutingModule } from './math-subjects-routing.module';
 import { MenuMathsComponent } from './menu-maths/menu-maths.component';
 import { TruthTableComponent } from './truth-table/truth-table.component';
 import { FormsModule } from '@angular/forms';
+import { PrimeComponent } from './prime/prime.component';
+import { CartesianProductComponent } from './cartesian-product/cartesian-product.component';
+import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
 
 
 @NgModule({
   declarations: [
     MenuMathsComponent,
-    TruthTableComponent
+    TruthTableComponent,
+    PrimeComponent,
+    CartesianProductComponent,
+    EuclideanGCDComponent
   ],
   imports: [
     CommonModule,

@@ -10,6 +10,10 @@ export class MenuMathsComponent implements OnInit {
 
   menuItems= [
     {name:'Truth Table', route:'maths/truthTable'},
+    {name:'Power Sets', route:'maths/powerSets'},
+    {name:'Prime', route:'maths/prime'},
+    {name:'Cartesian Product', route:'maths/cartesianProduct'},
+    
     
 ];
   constructor(private router: Router) { }
