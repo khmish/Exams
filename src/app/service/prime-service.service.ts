@@ -7,36 +7,24 @@ export class PrimeServiceService {
 
   constructor() { }
 
-  primeFatoriztion(maxNumber) {
-    const isPrime = new Array(maxNumber + 1).fill(true);
-    isPrime[0] = false;
-    isPrime[1] = false;
-  
-    const primes = [];
-  
-    for (let number = 2; number <= maxNumber; number += 1) {
-      if (isPrime[number] === true) {
-        primes.push(number);
-  
-        /*
-         * Optimisation.
-         * Start marking multiples of `p` from `p * p`, and not from `2 * p`.
-         * The reason why this works is because, at that point, smaller multiples
-         * of `p` will have already been marked `false`.
-         *
-         * Warning: When working with really big numbers, the following line may cause overflow
-         * In that case, it can be changed to:
-         * let nextNumber = 2 * number;
-         */
-        let nextNumber = number * number;
-  
-        while (nextNumber <= maxNumber) {
-          isPrime[nextNumber] = false;
-          nextNumber += number;
-        }
-      }
+  primeFatoriztion(num) {
+    var primeFactors = [];
+    while (num % 2 === 0) {
+        primeFactors.push(2);
+        num = num / 2;
     }
-  
-    return primes;
+    
+    var sqrtNum = Math.sqrt(num);
+    for (var i = 3; i <= sqrtNum; i++) {
+        while (num % i === 0) {
+            primeFactors.push(i);
+            num = num / i;
+        }
+    }
+
+    if (num > 2) {
+        primeFactors.push(num);
+    }
+    return primeFactors;
   }
 }

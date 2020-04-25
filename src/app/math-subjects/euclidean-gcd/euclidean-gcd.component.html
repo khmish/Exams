@@ -1,1 +1,21 @@
-<p>euclidean-gcd works!</p>
+<div class="container">
+    <H4>GCD euclidean</H4>
+    <div class="form">
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" [(ngModel)]="sA"  class="form-control" placeholder="" aria-describedby="helpId">
+            <small id="helpId" class="text-muted">Help text</small>
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" [(ngModel)]="sB"  class="form-control" placeholder="" aria-describedby="helpId">
+            <small id="helpId" class="text-muted">Help text</small>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="calculate()" >calculate</button>
+    </div>
+    <br>
+    <br>
+    <div *ngIf="solutions"  class="alert alert-success xy-4" role="alert" [innerHTML]="solutions">
+    
+    </div>
+</div>
