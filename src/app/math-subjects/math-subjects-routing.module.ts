@@ -19,6 +19,8 @@ import {
   PrimeComponent
 } from './prime/prime.component';
 import { CartesianProductComponent } from './cartesian-product/cartesian-product.component';
+import { LCMComponent } from './lcm/lcm.component';
+import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
 
 
 const routes: Routes = [{
@@ -41,7 +43,17 @@ const routes: Routes = [{
     {
       path: 'prime',
       component: PrimeComponent
-    },
+    }
+    ,
+    {
+      path: "LCM",
+      component: LCMComponent
+    }
+    ,
+    {
+      path: "GCD_Euclidean",
+      component: EuclideanGCDComponent
+    }
   ]
 }];
 

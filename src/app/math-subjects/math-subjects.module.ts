@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { PrimeComponent } from './prime/prime.component';
 import { CartesianProductComponent } from './cartesian-product/cartesian-product.component';
 import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
+import { LCMComponent } from './lcm/lcm.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
     TruthTableComponent,
     PrimeComponent,
     CartesianProductComponent,
-    EuclideanGCDComponent
+    EuclideanGCDComponent,
+    LCMComponent
   ],
   imports: [
     CommonModule,
