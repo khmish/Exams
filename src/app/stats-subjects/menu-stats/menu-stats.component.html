@@ -1,4 +1,4 @@
-<div class="btn-group-vertical col">
+<div class="btn-group-vertical col" (click)="onButtonGroupClick($event)">
   
     <button *ngFor="let item of menuItems" type="button" class="btn text-dark  btn-warning    " (click)="routeTo(item.route)" style="border-radius:0">{{item.name}}</button>
    

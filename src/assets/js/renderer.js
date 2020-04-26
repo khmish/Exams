@@ -78,6 +78,8 @@ function outputRow(table) {
 		lastCell.innerHTML = (result? "<h4>T</h4>" : "<h4>F</h4>");
 		row.appendChild(lastCell);
 		
+	
+		
 		table.appendChild(row);
 	}
 }

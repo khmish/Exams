@@ -7,7 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule }   from '@angular/forms';
 import { MathSubjectsComponent } from './math-subjects/math-subjects.component';
 import { MathSubjectsModule } from './math-subjects/math-subjects.module';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { StatsSubjectsModule } from './stats-subjects/stats-subjects.module';
 import { PowerSetsComponent } from '../app/math-subjects/power-sets/power-sets.component';
 
@@ -24,10 +24,11 @@ import { PowerSetsComponent } from '../app/math-subjects/power-sets/power-sets.c
     AppRoutingModule,
     MathSubjectsModule,
     StatsSubjectsModule,
-    FormsModule
+    FormsModule,
+    
   ],
   exports: [],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent,]
 })
 export class AppModule { }
