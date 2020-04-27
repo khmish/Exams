@@ -10,6 +10,7 @@ import { MathSubjectsModule } from './math-subjects/math-subjects.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { StatsSubjectsModule } from './stats-subjects/stats-subjects.module';
 import { PowerSetsComponent } from '../app/math-subjects/power-sets/power-sets.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { PowerSetsComponent } from '../app/math-subjects/power-sets/power-sets.c
     NavBarComponent,
     MathSubjectsComponent,
     PowerSetsComponent,
+    ContactUsComponent,
    
    
   ],

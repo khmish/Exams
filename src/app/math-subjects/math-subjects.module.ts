@@ -11,6 +11,7 @@ import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
 import { LCMComponent } from './lcm/lcm.component';
 import { MatrixComponent } from './matrix/matrix.component';
 import { SequenceComponent } from './sequence/sequence.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SequenceComponent } from './sequence/sequence.component';
     EuclideanGCDComponent,
     LCMComponent,
     MatrixComponent,
-    SequenceComponent
+    SequenceComponent,
+    TestComponent
   ],
   imports: [
     CommonModule,
