@@ -21,6 +21,8 @@ import {
 import { CartesianProductComponent } from './cartesian-product/cartesian-product.component';
 import { LCMComponent } from './lcm/lcm.component';
 import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
+import { MatrixComponent } from './matrix/matrix.component';
+import { SequenceComponent } from './sequence/sequence.component';
 
 
 const routes: Routes = [{
@@ -38,6 +40,16 @@ const routes: Routes = [{
     {
       path: 'cartesianProduct',
       component: CartesianProductComponent
+    }
+    ,
+    {
+      path: "Matrix",
+      component: MatrixComponent
+    }
+    ,
+    {
+      path: "Sequence",
+      component: SequenceComponent
     },
     
     {
@@ -54,6 +66,8 @@ const routes: Routes = [{
       path: "GCD_Euclidean",
       component: EuclideanGCDComponent
     }
+    
+    
   ]
 }];
 

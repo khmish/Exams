@@ -13,6 +13,8 @@ export class MenuMathsComponent implements OnInit {
     {name:'Power Sets', route:'maths/powerSets'},
     {name:'Prime', route:'maths/prime'},
     {name:'Cartesian Product', route:'maths/cartesianProduct'},
+    {name:'Matrix', route:'maths/Matrix'},
+    {name:'Sequence', route:'maths/Sequence'},
     {name:'GCD Euclidean', route:'maths/GCD_Euclidean'},
     {name:'LCM', route:'maths/LCM'},
     

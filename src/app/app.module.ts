@@ -11,12 +11,14 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { StatsSubjectsModule } from './stats-subjects/stats-subjects.module';
 import { PowerSetsComponent } from '../app/math-subjects/power-sets/power-sets.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     MathSubjectsComponent,
     PowerSetsComponent,
+   
    
   ],
   imports: [

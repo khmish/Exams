@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { Matrix } from 'ml-matrix';
 import { MathSubjectsRoutingModule } from './math-subjects-routing.module';
 import { MenuMathsComponent } from './menu-maths/menu-maths.component';
 import { TruthTableComponent } from './truth-table/truth-table.component';
@@ -9,6 +9,8 @@ import { PrimeComponent } from './prime/prime.component';
 import { CartesianProductComponent } from './cartesian-product/cartesian-product.component';
 import { EuclideanGCDComponent } from './euclidean-gcd/euclidean-gcd.component';
 import { LCMComponent } from './lcm/lcm.component';
+import { MatrixComponent } from './matrix/matrix.component';
+import { SequenceComponent } from './sequence/sequence.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { LCMComponent } from './lcm/lcm.component';
     PrimeComponent,
     CartesianProductComponent,
     EuclideanGCDComponent,
-    LCMComponent
+    LCMComponent,
+    MatrixComponent,
+    SequenceComponent
   ],
   imports: [
     CommonModule,
