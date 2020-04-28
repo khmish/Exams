@@ -100,14 +100,14 @@ export class SequenceComponent implements OnInit {
   {
     this.solutions=''
    
-    this.solutions='<h4>the Arithmtic n term = '+this.findArthTerm(this.artTxt,this.dTxt,this.nAriTxt)+"</h4>"
+    this.solutions='<h4>the Arithmtic n term = '+this.findArthTerm(Number.parseInt(this.artTxt),Number.parseInt(this.dTxt),Number.parseInt(this.nAriTxt))+"</h4>"
   }
 
   cal3()
   {
     this.solutions=''
    
-    this.solutions='<h4>the n term ='+this.findGeoTerm(this.geoTxt,this.rTxt,this.nGeoTxt)+"</h4>"
+    this.solutions='<h4>the n term ='+this.findGeoTerm(Number.parseInt(this.geoTxt),Number.parseInt(this.rTxt),Number.parseInt(this.nGeoTxt))+"</h4>"
   }
 
   findDiffOrRatio(arr) {

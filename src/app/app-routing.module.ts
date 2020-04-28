@@ -7,6 +7,7 @@ import {
 } from '@angular/router';
 import { MathSubjectsComponent } from './math-subjects/math-subjects.component';
 import { StatsSubjectsComponent } from './stats-subjects/stats-subjects.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,11 @@ const routes: Routes = [
   {
     path: 'stats',
     component:StatsSubjectsComponent
+  }
+  ,
+  {
+    path: 'contactUs',
+    component:ContactUsComponent
   }
   // {
   //   path: '**',component

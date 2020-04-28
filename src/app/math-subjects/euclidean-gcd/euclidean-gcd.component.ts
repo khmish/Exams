@@ -20,16 +20,19 @@ export class EuclideanGCDComponent implements OnInit {
   calculate(){
     this.steps=[]
     this.solutions="<h4> ";
-    let result=this.euclideanAlgorithm(this.sA,this.sB);
-    let tm=Math.abs(Number.parseInt(this.sA)-Number.parseInt(this.sB))
-    this.solutions+=this.sA>this.sB?"1) "+this.sA+" - "+this.sB+" ="+(tm)+"<br>":"1) "+this.sB+" - "+this.sA+" = "+(tm)+"<br>"
-    for (let index = 0; index < this.steps.length; index++) {
+    this.gcd(this.sA,this.sB)
+    this.solutions+="<br> = ["+this.steps
+    this.solutions+="]</h4> ";
+    // let result=this.euclideanAlgorithm(this.sA,this.sB);
+    // let tm=Math.abs(Number.parseInt(this.sA)-Number.parseInt(this.sB))
+    // this.solutions+=this.sA>this.sB?"1) "+this.sA+" - "+this.sB+" ="+(tm)+"<br>":"1) "+this.sB+" - "+this.sA+" = "+(tm)+"<br>"
+    // for (let index = 0; index < this.steps.length; index++) {
       
-      this.solutions+=(index+2)+") "+this.steps[index].expression+"<br>"
+    //   this.solutions+=(index+2)+") "+this.steps[index].expression+"<br>"
       
-    }
+    // }
     
-    this.solutions+="gcd("+this.sA+","+this.sB+") = "+result+"</h4>"
+    // this.solutions+="gcd("+this.sA+","+this.sB+") = "+result+"</h4>"
 
   }
 
@@ -48,5 +51,21 @@ export class EuclideanGCDComponent implements OnInit {
     // Return the number that is not equal to zero since the last subtraction (it will be a GCD).
     return a || b;
   }
+
+  gcd(a, b) {
+    var R;
+    let i=1;
+    while ((a % b) > 0)  {
+      this.solutions+=(i++)+") "+a+ " % "+ b
+      R = a % b;
+      this.solutions+=" = "+R+"<br>"
+      this.steps.push(R)
+      a = b;
+      b = R;
+    }
+    
+    return b;
+  }
+  
 
 }
