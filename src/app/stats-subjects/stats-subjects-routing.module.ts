@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StatsSubjectsComponent } from './stats-subjects.component';
 import { StatSubNormalComponent } from './stat-sub-normal/stat-sub-normal.component';
 import { StatSubFundamentalComponent } from './stat-sub-fundamental/stat-sub-fundamental.component';
+import { TableZComponent } from './table-z/table-z.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,12 @@ const routes: Routes = [
                 path: 'fundamental',
                 component: StatSubFundamentalComponent
             }
+            ,
+            {
+                path: 'normalTable',
+                component: TableZComponent
+            }
+            
         ]
       }
 ];

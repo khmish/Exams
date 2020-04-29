@@ -6,6 +6,8 @@ import { StatSubNormalComponent } from './stat-sub-normal/stat-sub-normal.compon
 import { StatSubFundamentalComponent } from './stat-sub-fundamental/stat-sub-fundamental.component';
 import { StatsSubjectsComponent } from './stats-subjects.component';
 import { MenuStatsComponent } from './menu-stats/menu-stats.component';
+import { TableZComponent } from './table-z/table-z.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { MenuStatsComponent } from './menu-stats/menu-stats.component';
     StatSubNormalComponent,
     StatSubFundamentalComponent,
     StatsSubjectsComponent,
-    MenuStatsComponent
+    MenuStatsComponent,
+    TableZComponent
   ],
   imports: [
     CommonModule,
-    StatsSubjectsRoutingModule
+    StatsSubjectsRoutingModule,
+    FormsModule
   ],
   exports: [MenuStatsComponent]
 })

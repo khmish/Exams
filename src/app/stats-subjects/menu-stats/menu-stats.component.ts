@@ -11,6 +11,8 @@ export class MenuStatsComponent implements OnInit {
   menuItems= [
     {name:'Normal distribution', route:'stats/normal'},
     {name:'Fundamental Sampling', route:'stats/fundamental'},
+    {name:'Normal Table', route:'stats/normalTable'},
+    
 ];
   constructor(private router: Router) { }
 
